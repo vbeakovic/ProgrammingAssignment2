@@ -15,13 +15,23 @@
 makeCacheMatrix <- function(xm = matrix()) {
         
         xim <- NULL #inverted matrix (xim)
+        ##set (xm)
         set <- function(y) {
                 xm <<- y #matrix (xm)
                 xim <<- NULL
         }
-        get <- function() as.matrix(xm)
-        set_inverse <- function(inverse = matrix()) xim <<- inverse
-        get_inverse <- function() xim
+        ## get (xm)
+        get <- function() {
+                as.matrix(xm)
+        }
+        ## set inverse (xim)
+        set_inverse <- function(inverse = matrix()) {
+                xim <<- inverse
+        }
+        ## get inverse (xim)
+        get_inverse <- function() {
+                xim
+        }
         list(set = set, get = get,
              set_inverse = set_inverse,
              get_inverse = get_inverse)
