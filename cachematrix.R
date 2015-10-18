@@ -15,7 +15,7 @@
 makeCacheMatrix <- function(xm = matrix()) {
         
         xim <- NULL #inverted matrix (xim)
-        ##set (xm)
+        ## set (xm)
         set <- function(y) {
                 xm <<- y #matrix (xm)
                 xim <<- NULL
