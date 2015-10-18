@@ -6,11 +6,11 @@
 
 
 ## makeCacheMatrix - Function ##
-## supply an invertible matrix as x parameter
+## supply an invertible matrix as xm parameter
 ## the function stores the matrix and its inversion in its environment
 ## and provides a list of four functions (set(), get(), get_inverse(), 
-## set_inverse()to set and retreive the matrix and its inversion. 
-## Use x$function() to access each of the functions.
+## set_inverse()) to set and retreive the matrix and its inversion. 
+## Use xm$function_name() to access each of the functions.
 
 makeCacheMatrix <- function(xm = matrix()) {
         
